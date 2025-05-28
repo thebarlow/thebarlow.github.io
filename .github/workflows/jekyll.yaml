@@ -1,0 +1,23 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches:
+      - main  # or "master" if your repo uses that
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3.2'  # or whatever you're using
+      - run: gem install bundler
+      - run: bundle install
+      - run: bundle exec jekyll build
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: './_site'
+      - uses: actions/deploy-pages@v1
