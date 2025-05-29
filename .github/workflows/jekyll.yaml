@@ -19,14 +19,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-      - run: gem install bundler
-      - run: bundle install
-      - run: bundle exec jekyll build
-      - uses: actions/upload-pages-artifact@v1
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './_site'
 
@@ -35,5 +45,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/deploy-pages@v1
+      - name: Deploy to GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4
