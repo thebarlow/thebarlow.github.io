@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home">
+  <h1>👋 Welcome to My Developer Portfolio</h1>
+
+  <p>Hello! I'm <strong>Matthew Barlow</strong>, a developer passionate about building creative, efficient, and scalable solutions. This site showcases my projects and technical skills.</p>
+
+  <h2>🛠️ Featured Projects</h2>
+  <ul>
+    {% for project in site.projects %}
+      <li>
+        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        <p>{{ project.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>📫 Contact</h2>
+  <p>You can reach me at <a href="mailto:barlowmatt96@gmail.com">barlowmatt96@gmail.com</a> or find me on <a href="https://github.com/thebarlow" target="_blank">GitHub</a>.</p>
+</div>
