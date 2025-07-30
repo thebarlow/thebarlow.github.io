@@ -1,6 +1,9 @@
+
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 0;
+  margin-left: 2%;
+  margin-right:2%;
   padding: 0;
   line-height: 1.6;
   background: #ffffffff;
@@ -8,33 +11,33 @@ body {
 }
 
 header {
-  background: #333;
-  color: white;
-  padding: 1rem;
+  background: white;
+  color: black;
 }
-
+/* Text decoration none is NOT removing the underline for some reason */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav h1 a {
+#contact img{
+  width:40px;
+  height:40px;
+}
+
+/*
+a{
+  text-decoration: none;
+}
+
+nav a {
   color: white;
   text-decoration: none;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
+section h1 {
+  align-items:center;
 }
 
 main {
@@ -47,7 +50,30 @@ footer {
   background: #eee;
   font-size: 0.9rem;
 }
-
+section{
+  text-align:center;
+}
+.column{
+  float:left;
+  width:50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .home {
   
+}
+
+.mygrid{
+  column-count: 3;
+  column-gap: 10px;
+
+}
+*/
+#portrait{
+  width:75%;
+  height:75%;
+  border-radius:30px;
 }

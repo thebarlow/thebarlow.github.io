@@ -4,20 +4,65 @@ title: Home
 ---
 
 <div class="home">
-  <h1>Welcome to My Developer Portfolio</h1>
 
-  <p>Hello! I'm <strong>Matthew Barlow</strong>, a developer passionate about building creative, efficient, and scalable solutions. This site showcases my projects and technical skills.</p>
+  <section id="hero">
+    <container>
+      <h1>Welcome to My Developer Portfolio</h1>
+      <div class="row">
+        <div class="column" id="greetings">
+          <p>Hi, i'm Matthew.</p>
+          <h2>Welcome to my developer Portfolio. I am committed to developing scalable, 
+            reliable solutions for clients</h2>
+        </div>
+        <div class="column">
+          <img src="assets/images/me.jpg" id="portrait" alt="Handsome Gentleman">
+        </div>
+      </div>
+    </container>
+  </section>
 
-  <h2>🛠️ Featured Projects</h2>
-  <ul>
-    {% for project in site.projects %}
-      <li>
-        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-        <p>{{ project.description }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+  <section>
+    <container>
+      <h1>Welcome to My Developer Portfolio</h1>
+      <div class="mygrid">
 
-  <h2>📫 Contact</h2>
-  <p>You can reach me at <a href="mailto:barlowmatt96@gmail.com">barlowmatt96@gmail.com</a> or find me on <a href="https://github.com/thebarlow" target="_blank">GitHub</a>.</p>
+      </div>
+    </container>
+  </section>
+
+  <section id="projects">
+    <container>
+      <h1>🛠️ Featured Projects</h1>
+      <div class="row">
+        <div class="column">
+          <ul>
+            {% for project in site.projects %}
+              <li>
+                <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+                <p>{{ project.description }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="column">
+          <p> Put some kind of image gallery here</p>
+        </div>
+      </div>
+    </container>
+  </section>
+
+  <section id="contact">
+    <container>
+      <h1>Contact me</h1>
+      <div class="row">
+        <div class="column">
+          {% include contact.html %}
+        </div>
+        <div class="column">
+          {% include contact_me.html %}
+        </div>
+      </div>
+    </container>
+  </section>  
+
 </div>
