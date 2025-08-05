@@ -4,28 +4,17 @@ title: Home
 ---
 
 <div class="home">
-
-  <section id="hero">
-    <container>
-      <h1>Welcome to My Developer Portfolio</h1>
-      <div class="row">
-        <div class="column" id="greetings">
-          <p>Hi, i'm Matthew.</p>
-          <h2>Welcome to my developer Portfolio. I am committed to developing scalable, 
-            reliable solutions for clients</h2>
-        </div>
-        <div class="column">
-          <img src="assets/images/me.jpg" id="portrait" alt="Handsome Gentleman">
-        </div>
-      </div>
-    </container>
-  </section>
-
   <section>
     <container>
       <h1>Welcome to My Developer Portfolio</h1>
-      <div class="mygrid">
-
+      <div class="Hero-row">
+        <div class="Hero-column" id="greetings">
+          <p>Hi, I'm Matthew.</p>
+          <h2>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h2>
+        </div>
+        <div class="Hero-column">
+          <img src="assets/images/me.jpg" id="portrait" alt="Handsome Gentleman">
+        </div>
       </div>
     </container>
   </section>
@@ -45,7 +34,7 @@ title: Home
           </ul>
         </div>
         <div class="column">
-          <p> Put some kind of image gallery here</p>
+          <p> Put some kind of image gallery here, probably with javascript</p>
         </div>
       </div>
     </container>
@@ -53,16 +42,8 @@ title: Home
 
   <section id="contact">
     <container>
-      <h1>Contact me</h1>
-      <div class="row">
-        <div class="column">
-          {% include contact.html %}
-        </div>
-        <div class="column">
-          {% include contact_me.html %}
-        </div>
-      </div>
+      <h1>Contact Me</h1>
+      {%include contact_me.html %}
     </container>
-  </section>  
-
+  </section>
 </div>

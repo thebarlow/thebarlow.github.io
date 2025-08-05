@@ -14,66 +14,47 @@ header {
   background: white;
   color: black;
 }
-/* Text decoration none is NOT removing the underline for some reason */
-nav {
-  display: flex;
+nav{
+  display:flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#contact img{
-  width:40px;
-  height:40px;
-}
-
-/*
-a{
   text-decoration: none;
 }
-
-nav a {
-  color: white;
+nav h1{
+  flex-grow:1;
+}
+nav a{
+  flex-grow:3;
+  justify-content: flex-end;
   text-decoration: none;
 }
-
-section h1 {
-  align-items:center;
+a:hover{
+  color:red;
 }
-
-main {
-  padding: 2rem;
+a::file-selector-button
+.Hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-footer {
+.contact_link{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer{
+  display:flex;
+  justify-content: center;
+  margin-top:2%
+}
+h1{
   text-align: center;
-  padding: 1rem;
-  background: #eee;
-  font-size: 0.9rem;
 }
-section{
-  text-align:center;
+/*Change width to relative unit*/
+#contact img{
+  width: 100px;
 }
-.column{
-  float:left;
-  width:50%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.home {
-  
-}
-
-.mygrid{
-  column-count: 3;
-  column-gap: 10px;
-
-}
-*/
 #portrait{
-  width:75%;
-  height:75%;
+  width:600px;
   border-radius:30px;
 }
