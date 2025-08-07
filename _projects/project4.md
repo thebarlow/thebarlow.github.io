@@ -1,5 +1,5 @@
 ---
-title: "Content Distribution Network (CDN)"
+title: "Project 4"
 description: "A brief description of this project."
 link: "https://github.com/yourusername/project1"
 thumbnail:"/assets/images/cdn_temp.jpg"

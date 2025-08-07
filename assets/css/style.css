@@ -37,6 +37,35 @@ a::file-selector-button
   justify-content: space-between;
   align-items: center;
 }
+
+.project-grid{
+  display:flex;
+  margin:auto;
+  justify-content: space-evenly;
+  align-items:center;
+}
+.project-grid img{
+  opacity:0.8;
+  width:40%;
+  border-radius:10%;
+  border-style:solid;
+  margin-left:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.project-grid p{
+  
+  margin-left:5px;
+}
+.project-card{
+  display:flex;
+  border-style:solid;
+  padding-right:0px;
+  background:rgb(183, 183, 183);
+  border-radius:10%;
+}
+
+
 .contact_link{
   display:flex;
   justify-content: space-evenly;

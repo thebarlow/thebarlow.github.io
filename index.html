@@ -18,7 +18,7 @@ title: Home
       </div>
     </container>
   </section>
-
+<!---
   <section id="projects">
     <container>
       <h1>🛠️ Featured Projects</h1>
@@ -39,6 +39,22 @@ title: Home
       </div>
     </container>
   </section>
+-->
+  <section id="projects">
+    <container>
+      <h1>My Projects</h1>
+      <div class="project-grid">
+        {% for project in site.projects %}
+          <div class="project-card">
+            <img src="{{project.thumbnail | default:"/assets/images/cdn_temp.jpg"}}" 
+            alt={{project.title | default:"Project Title"}} class="project-thumbnail">
+            <p>{{% project.desc %}}</p>
+          </div>
+          {% endfor %}
+      </div>
+    </container>
+  </section>
+
 
   <section id="contact">
     <container>
