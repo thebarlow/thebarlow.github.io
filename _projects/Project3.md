@@ -2,7 +2,7 @@
 title: "Project 3"
 description: "A brief description of this project."
 link: "https://github.com/yourusername/project1"
-thumbnail:"/assets/images/cdn_temp.jpg"
+thumbnail: "/assets/images/cdn_temp.jpg"
 date: 2024-05-28
 ---
 

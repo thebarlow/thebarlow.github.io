@@ -32,39 +32,71 @@ a:hover{
   color:red;
 }
 a::file-selector-button
-.Hero-row {
+/*HERO SECTION*/
+.Fun-box {
   display: flex;
+  flex-flow:row nowrap;
   justify-content: space-between;
   align-items: center;
+  border-style:dashed;
+  border-style:solid;
+  background-color: blue;
+  width:100px;
+  height:100px;
+}
+.Hero-box img{
+  width:40%;
+  border-radius: 20%;
+  border-style:dotted;
+}
+.Hero-text{
+  width:40%;
+  border-radius:30px;
+  border-style:dotted;
 }
 
+/*PROJECT SECTION*/
+
+/*This is the flex container, it holds all the projects cards*/
 .project-grid{
   display:flex;
-  margin:auto;
+  flex-flow:row wrap;
   justify-content: space-evenly;
   align-items:center;
+  align-content: space-between; /*Puts space between the rows of projects*/
+  height:35vh;
 }
-.project-grid img{
-  opacity:0.8;
-  width:40%;
-  border-radius:10%;
-  border-style:solid;
-  margin-left:5px;
-  margin-top:5px;
-  margin-bottom:5px;
-}
+
 .project-grid p{
   
   margin-left:5px;
 }
+/*This is the item for each individual project item, it has an image, a description, and a link*/
 .project-card{
   display:flex;
   border-style:solid;
   padding-right:0px;
   background:rgb(183, 183, 183);
-  border-radius:10%;
+  border-radius:5vh;
+  width:30%;
+  height:45%;
+}
+.project-card img{
+  opacity:0.8;
+  width:30%;
+  border-radius:25%;
+  border-style:solid;
+  margin-left:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-right:2%;
+}
+.project-card div{
+  display:flex;
+  flex-direction:column;
 }
 
+/*CONTACT SECTION*/
 
 .contact_link{
   display:flex;
@@ -82,8 +114,4 @@ h1{
 /*Change width to relative unit*/
 #contact img{
   width: 100px;
-}
-#portrait{
-  width:600px;
-  border-radius:30px;
 }

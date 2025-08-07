@@ -1,8 +1,8 @@
 ---
 title: "Content Distribution Network (CDN)"
-description: "A brief description of this project."
+description: "This is a CDN"
 link: "https://github.com/yourusername/project1"
-thumbnail:"/assets/images/cdn_temp.jpg"
+thumbnail: "/assets/images/cdn_temp.jpg"
 date: 2024-05-28
 ---
 
