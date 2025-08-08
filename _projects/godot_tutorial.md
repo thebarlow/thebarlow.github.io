@@ -1,9 +1,9 @@
 ---
 title: "GoDot Tutorial"
-description: "Walkthrough GoDot tutorial from website."
+description: ""
 link: "https://github.com/thebarlow/Tutorial_Godot"
 tags: "GoDot"
-thumbnail: "assets/images/default_project.jpg"
+thumbnail: ""
 date: 2024-05-28
 ---
 

@@ -22,15 +22,15 @@ title: Home
       <h1>My Projects</h1>
       <div class="project-grid">
         {% for project in site.projects %}
-          <div class="project-card">
-            <img src="{{project.thumbnail | default:"/assets/images/cdn_temp.jpg"}}" 
-            alt={{project.title | default:"Project Title"}} class="project-thumbnail">
-            <div>
-              <h4><u>{{project.title | default:"Project Title"}}</u></h3>
-              <span>{{ project.description | default:"Project Description"}}</span>
+            <div class="project-card">
+              <img src="{{project.thumbnail | default:"/assets/images/default_project.jpg"}}" 
+              alt={{project.title | default:"Project Title"}} class="project-thumbnail">
+              <div>
+                <h4><u>{{project.title | default:"Project Title"}}</u></h3>
+                <span>{{ project.description | default:"Project Description"}}</span>
+              </div>
+              
             </div>
-            
-          </div>
         {% endfor %}
       </div>
     </container>

@@ -3,7 +3,7 @@ title: "Portfolio Website"
 description: "The website you're looking at right now!"
 link: "https://www.matthewbarlow.me/"
 tags: "HTML, CSS, Jekyll, Ruby"
-thumbnail: "assets/images/default_project.jpg"
+thumbnail: ""
 date: 2024-05-28
 ---
 
