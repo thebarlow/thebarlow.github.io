@@ -1,0 +1,11 @@
+---
+title: "Workout App"
+description: "Informational app to help you program exercises"
+link: ""
+tags: "Swift, IOS, AndroidStudio, Java, Blender"
+thumbnail: ""
+date: 2024-05-28
+---
+
+Phone app, teaches the user about the different muscles of the body, what primary movement patterns train them, and suggest exercise programming to best fit their goals. 
+Maybe use some kind of camera feature to check the user's form on exercises and critique them.
