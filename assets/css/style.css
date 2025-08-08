@@ -10,49 +10,77 @@ body {
   color: #333;
 }
 
+
+/* NAV BAR */
 header {
-  background: white;
+  background: #f1f1f1;
   color: black;
 }
-nav{
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none;
+
+header > ul{
+  margin:0px;
+  padding:5px;
+  list-style-type:none;
+
+  background-color:#f1f1f1;
+  width:100%;
+  overflow:hidden;
+
+  position:fixed;
+  top:0;
 }
+header > ul>li{
+  color:#000;
+  text-decoration:none;
+  padding: 2px 8px;
+
+  border-right: 1px solid #bbb;
+  float:right;
+
+  margin-right:10%;
+}
+header>ul>li:last-child{
+  border-right: none;
+}
+header>ul>li>a{
+  display:block;
+}
+
 nav h1{
+  border-style:dotted;
   flex-grow:1;
-}
-nav a{
-  flex-grow:3;
-  justify-content: flex-end;
-  text-decoration: none;
 }
 a:hover{
   color:red;
 }
-a::file-selector-button
+
 /*HERO SECTION*/
-.Fun-box {
-  display: flex;
-  flex-flow:row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  border-style:dashed;
-  border-style:solid;
-  background-color: blue;
-  width:100px;
-  height:100px;
+.hero-grid{
+  margin-top:5%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 4fr;
+  column-gap:2%;
+  /*padding: 10px;
+  row-gap:0%;*/
 }
-.Hero-box img{
-  width:40%;
-  border-radius: 20%;
-  border-style:dotted;
+
+
+#hero-hook{
+  font-size:20px;
+  align-self: end;
+  margin-bottom:1%;
 }
-.Hero-text{
-  width:40%;
-  border-radius:30px;
-  border-style:dotted;
+#hero-description{
+  font-size:25px;
+  margin-bottom:5%;
+}
+#hero-image{
+  grid-row:1/span 2;
+  border-radius:20%;
+  margin:1%;
+  width:100%;
+  justify-content: center;
 }
 
 /*PROJECT SECTION*/

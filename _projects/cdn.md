@@ -1,7 +1,8 @@
 ---
-title: "Project 4"
-description: "A brief description of this project."
-link: "https://github.com/yourusername/project1"
+title: "Content Distribution Network (CDN)"
+description: "This is a CDN"
+link: "https://github.com/thebarlow/cdn"
+tags: "Python, Computer Networks"
 thumbnail: "/assets/images/cdn_temp.jpg"
 date: 2024-05-28
 ---
