@@ -1,6 +1,6 @@
 ---
 title: "Night Planner"
-description: "Mobile/web app to help you plan a night out (or full vacation) with friends"
+description: "Mobile/web app to help you plan a night out (or full vacation) with friends."
 link: ""
 tags: "Swift, IOS, AndroidStudio, Java, GeoPandas"
 thumbnail: ""
