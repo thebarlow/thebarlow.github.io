@@ -12,46 +12,60 @@ body {
 
 
 /* NAV BAR */
+/* HEADER: make sticky */
 header {
-  background: #f1f1f1;
-  color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: #333;   /* navbar background color */
+  padding: 0.5rem 0;  /* vertical padding */
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
 }
 
-header > ul{
-  margin:0px;
-  padding:5px;
-  list-style-type:none;
+/* NAV LIST */
+header ul {
+  list-style: none;   /* remove bullets */
+  margin: 0;
+  padding: 0;
 
-  background-color:#f1f1f1;
-  width:100%;
-  overflow:hidden;
-
-  position:fixed;
-  top:0;
-}
-header > ul>li{
-  color:#000;
-  text-decoration:none;
-  padding: 2px 8px;
-
-  border-right: 1px solid #bbb;
-  float:right;
-
-  margin-right:10%;
-}
-header>ul>li:last-child{
-  border-right: none;
-}
-header>ul>li>a{
-  display:block;
+  display: flex;
+  justify-content: space-evenly; /* center horizontally */
+  gap: 2rem;               /* space between items */
 }
 
-nav h1{
-  border-style:dotted;
-  flex-grow:1;
+/* NAV LINKS */
+header ul li a {
+  text-decoration: none;   /* no underline */
+  color: white;            /* link color */
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
+
+/* Optional: active link style */
+header ul li a:active,
+header ul li a:focus {
+  color: #ffcc80;
+}
+
+/* Hover effect */
+ul li a:hover {
+  color: #ff9800;            /* change color on hover */
+}
+
+/* Optional: active link style */
+ul li a:active,
+ul li a:focus {
+  color: #ffcc80;            /* lighter hover when clicked/focused */
+}
+
+
 a:hover{
-  color:red;
+  color: #ff9800!important;
+  text-decoration:none;
 }
 
 /*HERO SECTION*/
@@ -78,69 +92,67 @@ a:hover{
 #hero-image{
   grid-row:1/span 2;
   border-radius:20%;
-  margin:1%;
+  margin:0;
   width:100%;
   justify-content: center;
 }
 
 /*PROJECT SECTION*/
-
-/*This is the flex container, it holds all the projects cards*/
-.project-grid{
-  display:flex;
-  flex-flow:row wrap;
-  justify-content: space-evenly;
-  align-items:center;
-  align-content: space-between; /*Puts space between the rows of projects*/
-  height:35vh;
+.project-flexbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap:1%;
+}
+.project-flexbox a {
+  text-decoration: none!important; /* removes underline from the link itself */
+  color: inherit;        /* keeps text color */
 }
 
-.project-grid p{
-  
-  margin-left:5px;
+.project-flexbox a:hover .project-card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* highlight on hover */
 }
-/*This is the item for each individual project item, it has an image, a description, and a link*/
-.project-card{
-  display:flex;
-  border-style:solid;
-  padding-right:0px;
-  background:rgb(183, 183, 183);
-  border-radius:5vh;
-  width:30%;
-  height:45%;
+.project-flexbox a:hover .project-card img{
+  opacity:0.7;
 }
-.project-card img{
-  opacity:0.8;
-  width:30%;
-  border-radius:25%;
-  border-style:solid;
-  margin-left:5px;
-  margin-top:5px;
-  margin-bottom:5px;
-  margin-right:2%;
+
+
+
+.project-card {
+  display: flex;
+  flex-direction: row;     /* image on the left, text on the right */
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 200px;            /* equal height cards in the grid */
+
+  align-items:stretch;
 }
-.project-card >div{
-  display:flex;
-  flex-direction:column;
-  width:60%;
-  text-align:center;
+
+.project-card img {
+  width: 40%;              /* image takes 40% of card width */
+  object-fit: fill;       /* crop without distortion */
+  height: auto;            /* fill card height */
+  display: block;
 }
-.project-card>div>h4{
-  padding-top:0px;
-  margin-top:2%;
-  margin-bottom:0px;
-  height:20%;
-  overflow:hidden;
-  text-align:left;
-}
-.project-card>div>span{
-  height:75%;
-  margin-top:0px;
-  text-align:left;
+
+.project-card-content {
+  flex: 1;                 /* take remaining space */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
   overflow:auto;
-  text-overflow:ellipsis;
-  margin-bottom:2%;
 }
+
+.project-card-content h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.project-card-content p {
+  margin: 0;
+  flex: 1;                 /* stretch description to fill vertical space */
+}
+
 
 /*CONTACT SECTION*/
 
@@ -160,4 +172,7 @@ h1{
 /*Change width to relative unit*/
 #contact img{
   width: 100px;
+}
+#contact img:hover{
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }

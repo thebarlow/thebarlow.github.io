@@ -16,26 +16,22 @@ title: Home
     </div>
   </section>
 
-
   <section id="projects">
-    <container>
-      <h1>My Projects</h1>
-      <div class="project-grid">
-        {% for project in site.projects %}
-            <div class="project-card">
-              <img src="{{project.thumbnail | default:"/assets/images/default_project.jpg"}}" 
-              alt={{project.title | default:"Project Title"}} class="project-thumbnail">
-              <div>
-                <h4><u>{{project.title | default:"Project Title"}}</u></h3>
-                <span>{{ project.description | default:"Project Description"}}</span>
-              </div>
-              
-            </div>
-        {% endfor %}
-      </div>
-    </container>
+    <h1> My Projects</h1>
+    <div class="project-flexbox">
+      {% for project in site.projects %}
+      <a href="{{project.url | default:'/#'}}">
+        <div class="project-card">
+          <img src="{{project.thumbnail | default:'/assets/images/default_project.jpg'}}">
+          <div class="project-card-content">
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
   </section>
-
 
   <section id="contact">
     <container>
