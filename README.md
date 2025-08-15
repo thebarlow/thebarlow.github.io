@@ -1,2 +1,2 @@
-# my-website
-My Jekyll Website
+# Matthew's Website
+This is a Portfolio Website, created for myself. I used Jekyll, a static site generator, which is built on Ruby. My website is hosted using GitHub pages, with CloudFlare being my DNS. The hostname is rented yearly. 

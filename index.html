@@ -20,7 +20,7 @@ title: Home
     <h1> My Projects</h1>
     <div class="project-flexbox">
       {% for project in site.projects %}
-      <a href="{{project.url | default:'/#'}}">
+      <a href="{{project.link | default:'/#'}}" target="_blank">
         <div class="project-card">
           <img src="{{project.thumbnail | default:'/assets/images/default_project.jpg'}}">
           <div class="project-card-content">

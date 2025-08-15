@@ -1,9 +1,9 @@
 ---
-title: "GoDot Tutorial"
+title: "GoDot App"
 description: ""
 link: "https://github.com/thebarlow/Tutorial_Godot"
 tags: "GoDot"
-thumbnail: ""
+thumbnail: "assets/images/Godot_icon.svg"
 date: 2024-05-28
 ---
 
